@@ -1,0 +1,1 @@
+all the information about the hello world in c will be in this directory
