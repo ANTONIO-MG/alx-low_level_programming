@@ -7,16 +7,16 @@
   */
 int main(void)
 {
-	char c;
+	char hexadecimal;
 
-	for (c = '0'; c <= '9'; c++)
+	for (hexadecimal = '0'; hexadecimal <= '9'; hexadecimal++)
 	{
-		putchar(c);
+		putchar(hexadecimal);
 	}
 
-	for (c = 'a'; c <= 'f'; c++)
+	for (hexadecimal = 'a'; hexadecimal <= 'f'; hexadecimal++)
 	{
-		putchar(c);
+		putchar(hexadecimal);
 	}
 
 	putchar('\n');

@@ -7,18 +7,18 @@
   */
 int main(void)
 {
-	int c, i;
+	int combination, i;
 
-	for (c = '0'; c <= '9'; c++)
+	for (combination = '0'; combination <= '9'; combination++)
 	{
 		for (i = '0'; i <= '9'; i++)
 		{
-			if (c < i)
+			if (combination < i)
 			{
-				putchar(c);
+				putchar(combination);
 				putchar(i);
 
-				if (c != '8' || (c == '8' && i != '9'))
+				if (combination != '8' || (combination == '8' && i != '9'))
 				{
 					putchar(',');
 					putchar(' ');

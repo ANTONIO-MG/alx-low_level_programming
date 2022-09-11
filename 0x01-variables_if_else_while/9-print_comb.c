@@ -7,13 +7,13 @@
   */
 int main(void)
 {
-	int c;
+	int numbers;
 
-	for (c = '0'; c <= '9'; c++)
+	for (numbers = '0'; numbers <= '9'; numbers++)
 	{
-		putchar(c);
+		putchar(numbers);
 
-		if (c != '9')
+		if (numbers != '9')
 		{
 			putchar(',');
 			putchar(' ');

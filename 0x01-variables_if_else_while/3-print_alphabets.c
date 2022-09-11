@@ -7,16 +7,16 @@
  */
 int main(void)
 {
-	char c;
+	char alphaB;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (alphaB = 'a'; alphaB <= 'z'; alphaB++)
 	{
-		putchar(c);
+		putchar(alphaB);
 	}
 
-	for (c = 'A'; c <= 'Z'; c++)
+	for (alphaB = 'A'; alphaB <= 'Z'; alphaB++)
 	{
-		putchar(c);
+		putchar(alphaB);
 	}
 
 	putchar('\n');
