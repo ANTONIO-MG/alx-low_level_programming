@@ -1,11 +1,10 @@
 #include "main.h"
 
-
 /**
- *printing the alphabet - used simple for loop.
- *
- *Return: void because no return present
- */
+  * print_alphabet - Make the alphabet
+  *
+  * Return: void
+  */
 
 void print_alphabet(void)
 {
