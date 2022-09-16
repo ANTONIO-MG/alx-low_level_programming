@@ -1,0 +1,1 @@
+in this directory you will find the scripts for the 0x03-debugging project, i will not include the main.c files that i used to test them but i have them localy and also tested all the filles using the betty sty;e and doc-style to test them, they have been compiled with the GCC compiler
