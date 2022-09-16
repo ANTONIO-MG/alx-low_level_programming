@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
-  * main - Prints Fizz on numbers that are multiples of 3 and Buzz on multiples of 5 
+  * main - Prints Fizz on nums multiples of 3 and Buzz on multiples of 5
   * x@: number placeholderx
-  * Return: returns 0 
+  * Return: returns 0
   */
 int main(void)
 {

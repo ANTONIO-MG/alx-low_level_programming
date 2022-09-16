@@ -2,25 +2,25 @@
 #include <math.h>
 
 /**
-  * main - Prints the biggerst prime factor of  612852475143
+  * main - Prints the largest prime factor of the number 612852475143
   *
-  * Return: void, no return
+  * Return: Always 0 (Success)
   */
 int main(void)
 {
-	double square = sqrt(number);
-	long x, largefactor;
+	long x, maxf;
 	long number = 612852475143;
+	double square = sqrt(number);
 
 	for (x = 1; x <= square; x++)
 	{
 		if (number % x == 0)
 		{
-			largefactor = number / x;
+			maxf = number / x;
 		}
 	}
 
-	printf("%ld\n", largefactor);
+	printf("%ld\n", maxf);
 
 	return (0);
 }
