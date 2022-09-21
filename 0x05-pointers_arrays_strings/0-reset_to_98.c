@@ -2,7 +2,7 @@
 
 /**
   * reset_to_98 - reset's a variable to new value
-  *
+  *@n: variable to be changed
   *
   *return : void
   */
