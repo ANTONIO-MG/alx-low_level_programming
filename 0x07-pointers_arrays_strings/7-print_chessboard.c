@@ -3,8 +3,8 @@
 /**
   * print_chessboard - Print the chessboard
   * @a: array of pieces
-  * @x: horizontaerticall coordinates of the board
-  * @y: vertical coordinates of the board
+  * x@: horizontal coordinates of the board
+  * y@: vertical coordinates of the board
   * Return: Nothing.
   */
 void print_chessboard(char (*a)[8])
