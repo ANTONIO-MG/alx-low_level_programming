@@ -5,7 +5,7 @@
   * @s: memory area that wii be fill
   * @b: constant byte
   * @n: bytes of memory area
-  * a@: stating point 
+  * a@: stating point
   * Return: 'S' the memory area filled
   */
 
