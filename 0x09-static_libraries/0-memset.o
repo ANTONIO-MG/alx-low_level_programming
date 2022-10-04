@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * _memset - empty function
+  * _memset - empty 
   *
   * Return: 0
   */
