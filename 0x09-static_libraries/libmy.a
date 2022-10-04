@@ -1,17 +1,12 @@
 !<arch>
-0-memset.o/     0           0     0     644     132       `
+0-memset.o/     0           0     0     644     83        `
 #include "main.h"
 
-/**
-  * _memset - empty 
-  *
-  * Return: 0
-  */
 char *_memset(char *s, char b, unsigned int n)
 {
-
 	return (0);
 }
+
 100-atoi.o/     0           0     0     644     110       `
 #include "main.h"
 
