@@ -5,7 +5,8 @@
   * array_range - ...
   * @min: ...
   * @max: ...
-  *
+  * @a: pointer to be returned
+  * @i: counting variable
   * Return: integer value
   */
 int *array_range(int min, int max)
