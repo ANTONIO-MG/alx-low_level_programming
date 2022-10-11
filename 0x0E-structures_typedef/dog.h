@@ -1,3 +1,6 @@
+#ifndef _HEADERFILE_
+#define _HEADERFILE_
+
 /**
   * dog - this is the name of the struct holdinga all the information about the dog.
   *
@@ -5,6 +8,7 @@
   * @age: the age of the dog
   * @owner: the owner of the dog.
   *
+  * Description: a structure of data that has all the attributes of a dog.
   */
 
 struct dog
@@ -14,3 +18,6 @@ struct dog
 	char *owner;
 
 };
+
+#endif
+
