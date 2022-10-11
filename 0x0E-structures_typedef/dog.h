@@ -1,7 +1,7 @@
 #ifndef _HEADER_
 #define _HEADER_
 /**
-  * struct dog - this is the name of the struct holdinga all the information about the dog.
+  * struct dog - the struct holdinga all the information about the dog.
   *
   * @name: the name of the dog
   * @age: the age of the dog
