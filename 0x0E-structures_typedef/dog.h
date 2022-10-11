@@ -1,5 +1,5 @@
 /**
-  * dog - this is the name of the struct holdinga all the information about the dog. 
+  * dog - this is the name of the struct holdinga all the information about the dog.
   *
   * @name: the name of the dog
   * @age: the age of the dog
