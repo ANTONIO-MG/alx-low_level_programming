@@ -1,5 +1,5 @@
 #ifndef _MAINH_
-#define _MAINH 
+#define _MAINH_
 
 #define SIZE 1024
 
