@@ -31,7 +31,9 @@ int main(int argc, char **argv)
 
 	else
 	{
-		printf("Error");
+		printf("Error\n");
+
+		return (1);
 	}
 
 	exit(EXIT_SUCCESS);
