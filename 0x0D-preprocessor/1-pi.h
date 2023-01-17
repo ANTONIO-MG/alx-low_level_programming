@@ -1,7 +1,4 @@
-#ifndef _MAINH_
-#define _MAINH_
-
+#ifndef PI_H
+#define PI_H
 #define PI 3.14159265359
-
-#endif /* _MAINH_ */
-
+#endif /* PI_H */

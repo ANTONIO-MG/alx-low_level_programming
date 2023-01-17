@@ -1,7 +1,6 @@
-#ifndef _MAINH_
-#define _MAINH_
-
+#ifndef OBJECT_LIKE_MACRO_H
+#define OBJECT_LIKE_MACRO_H
 #define SIZE 1024
 
-#endif /* _MAINH_ */
 
+#endif /* 0-OBJECT_LIKE_MACRO_H */

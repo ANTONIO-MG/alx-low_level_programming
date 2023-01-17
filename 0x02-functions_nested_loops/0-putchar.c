@@ -5,11 +5,12 @@
 * loop1@: counts the letters in the loop
 * str_size@: size of string for iteration
 * y@: string to be printed
-* return: 0
+* Return: nothing
 */
 
 int main(void)
 {
+
 	int loop1;
 	int str_size;
 	char y[9] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
@@ -19,6 +20,6 @@ int main(void)
 	{
 		putchar(y[loop1]);
 	}
-
 	return (0);
+
 }
