@@ -1,1 +1,0 @@
-this repo continues the tasks for pointers, nested loops, arreys and strings in C programming
