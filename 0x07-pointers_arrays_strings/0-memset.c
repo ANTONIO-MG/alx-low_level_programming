@@ -1,5 +1,5 @@
 /**
- * simple_print_buffer - function that fills memory with a constant byte
+ * _memset - function that fills memory with a constant byte
  * @b: the constant bytes to be filled in memory
  * @s: the pointer to the memory area
  * @n: the number of bites to be filled
@@ -9,12 +9,12 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-        unsigned int a;
+	unsigned int a;
 
-        for (a = 0; a < n; a++)
-        {
-                s[a] = b;
-        }
-        
-        return (s);
+	for (a = 0; a < n; a++)
+	{
+		s[a] = b;
+	}
+
+	return (s);
 }
