@@ -2,31 +2,34 @@
 #include <stdio.h>
 
 /**
- * _memset - function that fills memory with a constant byte
+ * _strchr - function that returns maching characters
  * @s: the string to be examined
- * @n: the character to be checked
+ * @c: the character to be checked
  *
- * Return: the remainder of the string occurance of character or null
+ * Return: the remainder of the string if matched or null.
  */
 
 char *_strchr(char *s, char c)
 {
-	int count;
+	int count = 0;
 
-	for (count = 0; count < 100; count++)
+	while (s[count] != '\0')
 	{
-		if ( s[count] == c)
+		if (s[count] == c)
 			break;
+		else
+			count++;
 	}
 
-	for ( ; count < 100; count++)
+	if (s[count] == c)
 	{
-		if ( s[count] == '\0')
+		while (s[count] != '\0')
 		{
-			return ('\0');
+			putchar(s[count]);
+			count++;
 		}
-		else
-			printf("%c", s[count]);
 	}
+	else
+		return ('\0');
 	return (0);
 }
