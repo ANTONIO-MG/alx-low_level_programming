@@ -29,7 +29,7 @@ char *create_array(unsigned int size, char c)
 
 		if (*(pointer + 0) == '\0')
 		{
-			return (NULL);
+			return (pointer);
 		}
 		else
 		{
