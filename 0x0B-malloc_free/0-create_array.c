@@ -24,7 +24,7 @@ char *create_array(unsigned int size, char c)
 
 		if (pointer == NULL)
 		{
-			return ((char *)1);
+			return (NULL);
 		}
 
 		else
