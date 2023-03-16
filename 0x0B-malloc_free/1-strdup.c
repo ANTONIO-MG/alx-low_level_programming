@@ -12,26 +12,32 @@
 char *_strdup(char *str)
 {
 	char  *pointer;
-	int count = 0;
+	int count;
 
+	count = 0;
 
-	pointer = (char *)malloc((sizeof(char) * sizeof(str)) + 1);
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	
+	pointer =  (char *)malloc(sizeof(char) * sizeof(*str + 1));
+	
 
 	if (pointer == NULL)
 	{
 		return (NULL);
 	}
-
 	else
 	{
 
 		while (str[count] != '\0')
-		{
+		{ 
 			pointer[count] = str[count];
 			count++;
 		}
+
 		return (pointer);
 
 	}
-
 }
