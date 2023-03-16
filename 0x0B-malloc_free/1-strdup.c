@@ -20,9 +20,9 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	
-	pointer =  (char *)malloc(sizeof(char) * sizeof(*str + 1));
-	
+
+	pointer =  (char *)malloc(sizeof(char) * sizeof(*str));
+
 
 	if (pointer == NULL)
 	{
@@ -32,7 +32,7 @@ char *_strdup(char *str)
 	{
 
 		while (str[count] != '\0')
-		{ 
+		{
 			pointer[count] = str[count];
 			count++;
 		}
