@@ -12,7 +12,7 @@
 char *_strdup(char *str)
 {
 	char  *pointer;
-	int count;
+	int count, count1;
 
 	count = 0;
 
@@ -21,7 +21,12 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	pointer =  (char *)malloc(sizeof(char) * sizeof(*str));
+	for (count1 = 0; str[count]; count++)
+	{
+		count1++;
+	}
+
+	pointer =  (char *)malloc(sizeof(char) * (count1 + 1));
 
 
 	if (pointer == NULL)
@@ -29,12 +34,12 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (str[count] != '\0')
+	for (count = 0; str[count] != '\0'; count++)
 	{
 		pointer[count] = str[count];
-		count++;
+	
 	}
-	pointer[count] = '\0';
+	pointer[count1] = '\0';
 	return (pointer);
 
 }
