@@ -28,16 +28,13 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	else
+
+	while (str[count] != '\0')
 	{
-
-		while (str[count] != '\0')
-		{
-			pointer[count] = str[count];
-			count++;
-		}
-
-		return (pointer);
-
+		pointer[count] = str[count];
+		count++;
 	}
+	pointer[count] = '\0';
+	return (pointer);
+
 }
