@@ -11,23 +11,28 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int count;
+	int count1, count2, x, y, total_count;
+	char *new[] = "A";
 
-	count = 0;
+	for (count1 = 0; count1 < sizeof(s1); count1++);
+	for (count2 = 0; count2 < sizeof(s2); count2++);
 
-	s1 = (char *)malloc(sizeof(char) * (sizeof(s1) + sizeof(s2)));
+	new = malloc(sizeof(char) * (count2 + count2));
 
+	if (new == NULL)
+		return (NULL);
+
+	for (total_count = 0, x = 0; x < count1 ; total_count++)
 	{
-
-		while (count < (int)(sizeof(s2 + 1)))
-		{
-			s2[sizeof(s1)] = s2[count];
-			count++;
-		}
-
-		free(s1);
-		return (s1);
-
+		new[total_count] = s1[x];
+		x++;
 	}
+	for (y = 0; y < count2; total_count++)
+	{
+		new[total_count] = s2[y];
+		y++;
+	} 
+
+	return (new);
 
 }

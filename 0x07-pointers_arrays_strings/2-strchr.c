@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _strchr - function that returns maching characters
@@ -16,7 +15,9 @@ char *_strchr(char *s, char c)
 	while (s[count] != '\0')
 	{
 		if (s[count] == c)
+		{
 			break;
+		}
 		else
 			count++;
 	}
@@ -25,7 +26,7 @@ char *_strchr(char *s, char c)
 	{
 		while (s[count] != '\0')
 		{
-			putchar(s[count]);
+			_putchar(s[count]);
 			count++;
 		}
 	}
