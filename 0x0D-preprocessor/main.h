@@ -4,9 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-ABS(x);
-SUM(x, y);
-
-
+int _putchar(char c);
 
 #endif /* _MICROS_*/
