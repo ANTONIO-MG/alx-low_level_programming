@@ -8,17 +8,7 @@
 
 int main(void)
 {
-	char *string;
-	int count = 0;
-
-	string = __FILE__;
-
-	while (string[count] != '\0')
-	{
-		printf("%c", string[count]);
-		count++;
-	}
-	printf("\n");
+	printf("%s\n", __FILE__);
 
 	return (0);
 }
