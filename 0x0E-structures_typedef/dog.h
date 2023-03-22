@@ -1,5 +1,5 @@
-#ifndef _DOG_STRUCT_
-#define _DOG_STRUCT_
+#ifndef _DOG_
+#define _DOG_
 
 /**
  * struct dog - the structure holding different properties
@@ -16,4 +16,11 @@ struct dog
 	char *owner;
 };
 
-#endif /* _DOG_STRUCT_*/
+typedef struct dog dog_t;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+
+#endif /* _DOG_STRUCT */
