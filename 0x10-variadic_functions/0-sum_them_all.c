@@ -19,15 +19,14 @@ int sum_them_all(const unsigned int n, ...)
 
 	if (n == 0)
 		return (0);
-	else
+
+	for (x = 0; x < n; x++)
 	{
-		for (x = 0; x < n; x++)
-		{
-			y += va_arg(summing_list, int);
-		}
-
-		va_end(summing_list);
-
-		return (y);
+		y += va_arg(summing_list, int);
 	}
+
+	va_end(summing_list);
+
+	return (y);
+
 }
