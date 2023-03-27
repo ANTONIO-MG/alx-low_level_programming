@@ -58,22 +58,21 @@ void print_all(const char *const format, ...)
 				break;
 
 			case 's':
-				if (format[count] == '\0')
 				{
-					printf("(nil)");
-					switch (count < (int)strlen(format) - 1)
+					if (format[count] == '\0')
 					{
-						case 1:
-							printf(", ");
-							break;
-						default:
-							break;
+						printf("(nil)");
+						switch (count < (int)strlen(format) - 1)
+						{
+							case 1:
+								printf(", ");
+								break;
+							default:
+								break;
 					}
 					break;
-				}
+					}
 
-				else
-				{
 					printf("%s", va_arg(to_print, char *));
 					switch (count < (int)strlen(format) - 1)
 					{
@@ -83,8 +82,9 @@ void print_all(const char *const format, ...)
 						default:
 							break;
 					}
-					break;
-				}
+
+				break;
+				}				
 
 			default:
 				break;
