@@ -9,5 +9,6 @@
  */
 int _putchar(char c)
 {
+	/* returns a given character passed as 'c'.*/
 	return (write(1, &c, 1));
 }

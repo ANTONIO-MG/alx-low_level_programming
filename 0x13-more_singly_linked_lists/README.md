@@ -1,3 +1,6 @@
+Author: Gerson Antonio
+Date: 03 April 2023
+
 MORE LINKED LISTS
 
 the following programs execute different tasks to linked lists, from adding nodes, to deleting nodes or changing the data on nodes.
