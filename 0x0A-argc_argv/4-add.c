@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
   * main - Prints the sum of args positive numbers
