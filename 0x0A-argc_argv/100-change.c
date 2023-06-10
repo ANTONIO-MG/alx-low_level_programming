@@ -11,7 +11,7 @@ int calculate_pennies(int cents);
  * @argc: number of arguments passed to the command line
  * @argv: strings passed to teh command line
  *
- * Return: 1 if more args passed or negative or returns coins given back 
+ * Return: 1 if more args passed or negative or returns coins given back
  */
 
 int main(int argc, char *argv[])
@@ -28,12 +28,12 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return 1;
+		return (1);
 	}
 	else if (check < 0)
 	{
 		printf("0\n");
-		return 1;
+		return (1);
 	}
 
 	/* Calculate the number of quarters to give the customer */
@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
 }
 
 /**
- * calculate_quarters - prints minimum num of coins to make change for given amount.
+ * calculate_quarters - calculates the numbers of quarters to give
  *
  * @cents: given amount of cents
  *
@@ -85,7 +85,7 @@ int calculate_quarters(int cents)
 }
 
 /**
- * calculate_dimes - prints minimum num of coins to make change for given amount.
+ * calculate_dimes - calculates the number of dimes to give
  *
  * @cents: given amount of cents
  *
@@ -104,7 +104,7 @@ int calculate_dimes(int cents)
 }
 
 /**
- * calculate_nickels - prints minimum num of coins to make change for given amount.
+ * calculate_nickels - calculates the number of nickels to have
  *
  * @cents: given amount of cents
  *
@@ -123,7 +123,7 @@ int calculate_nickels(int cents)
 }
 
 /**
- * calculate_pennies - prints minimum num of coins to make change for given amount.
+ * calculate_pennies - calculates the number of pennies to give
  *
  * @cents: given amount of cents
  *
