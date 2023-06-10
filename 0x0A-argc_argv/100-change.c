@@ -4,6 +4,7 @@ int calculate_quarters(int cents);
 int calculate_dimes(int cents);
 int calculate_nickels(int cents);
 int calculate_pennies(int cents);
+int calculate_mints(int mints);
 
 /**
  * main - prints minimum num of coins to make change for given amount.
@@ -17,11 +18,11 @@ int calculate_pennies(int cents);
 int main(int argc, char *argv[])
 {
 	/** Ask how many cents the customer is owed */
-	int cents = atoi(argv[1]);
-	int check = atoi(argv[1]);
+	int cents;
 	int quarters;
 	int dimes;
 	int nickels;
+	int mints;
 	int pennies;
 	int coins;
 
@@ -30,12 +31,13 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else if (check < 0)
+	else if (atoi(argv[1]) < 0)
 	{
 		printf("0\n");
 		return (1);
 	}
 
+	cents = atoi(argv[1]);
 	/* Calculate the number of quarters to give the customer */
 	quarters = calculate_quarters(cents);
 
@@ -51,13 +53,18 @@ int main(int argc, char *argv[])
 
 	cents = cents - nickels * 5;
 
+	/* calculate the number of mints to give to a customer */
+	mints = calculate_mints(cents);
+
+	cents = cents - mints * 2;
+
 	/* Calculate the number of pennies to give the customer */
 	pennies = calculate_pennies(cents);
 
 	cents = cents - pennies * 1;
 
 	/* Sum coins */
-	coins = quarters + dimes + nickels + pennies;
+	coins = quarters + dimes + nickels + mints + pennies;
 
 	/* Print total number of coins to give the customer */
 	printf("%i\n", coins);
@@ -120,6 +127,23 @@ int calculate_nickels(int cents)
 	nickels = cents / 5;
 
 	return (nickels);
+}
+
+/**
+ * calculate_mints - calculates the amount of mints to give
+ *
+ * @cents:given amount of cents
+ *
+ * Return: the number of pennies
+ */
+
+int calculate_mints(int cents)
+{
+	int mints;
+
+	mints = cents / 2;
+
+	return (mints);
 }
 
 /**
