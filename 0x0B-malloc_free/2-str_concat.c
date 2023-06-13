@@ -14,16 +14,6 @@ char *str_concat(char *s1, char *s2)
 	int count1, count2, total_count = 0;
 	char *new;
 
-	if (s1 == NULL)
-	{
-		s1 = " ";
-	}
-	
-	if (s2 == NULL)
-	{
-		s2 = " ";
-	}
-
 	for (count1 = 0; count1 < (int)sizeof(s1); count1++)
 	;
 	for (count2 = 0; count2 < (int)sizeof(s2); count2++)
@@ -38,12 +28,26 @@ char *str_concat(char *s1, char *s2)
 
 	while (s1[count1])
 	{
-		new[total_count++] = s1[count1++];
+		if (s1 == NULL)
+		{
+			count1++;
+		}
+		else
+		{
+			new[total_count++] = s1[count1++];
+		}
 	}
 
 	while (s2[count2])
 	{
-		new[total_count++] = s2[count2++];
+		if (s2 == NULL)
+		{
+			count2++;
+		}
+		else
+		{
+			new[total_count++] = s2[count2++];
+		}
 	}
 
 	return (new);
