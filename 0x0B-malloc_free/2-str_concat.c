@@ -4,34 +4,46 @@
  * str_concat - function that concatenates s2 to the end of s1.
  *  in memory, which contains a copy of the string given as a parameter.
  * @s1: the string that will be modified
- * @s2: string to be concatenated to s1
+o * @s2: string to be concatenated to s1
  *
  * Return: NULL if it fails.
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	int count1, count2, x, y, total_count;
-	char *new[] = "A";
+	int count1, count2, total_count = 0;
+	char *new;
 
-	for (count1 = 0; count1 < sizeof(s1); count1++);
-	for (count2 = 0; count2 < sizeof(s2); count2++);
+	for (count1 = 0; count1 < (int)sizeof(s1); count1++)
+	;
+	for (count2 = 0; count2 < (int)sizeof(s2); count2++)
+	;
 
-	new = malloc(sizeof(char) * (count2 + count2));
+	if (s1 == NULL)
+	{
+		s1 = " ";
+	}
+	else if (s2 == NULL)
+	{
+		s2 = " ";
+	}
+
+	new = malloc((sizeof(char)) * ((count1 + count2) + 1));
 
 	if (new == NULL)
 		return (NULL);
 
-	for (total_count = 0, x = 0; x < count1 ; total_count++)
+	count1 = count2 = 0;
+
+	while (s1[count1])
 	{
-		new[total_count] = s1[x];
-		x++;
+		new[total_count++] = s1[count1++];
 	}
-	for (y = 0; y < count2; total_count++)
+
+	while (s2[count2])
 	{
-		new[total_count] = s2[y];
-		y++;
-	} 
+		new[total_count++] = s2[count2++];
+	}
 
 	return (new);
 
