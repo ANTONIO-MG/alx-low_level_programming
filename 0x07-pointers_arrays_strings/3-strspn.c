@@ -12,6 +12,9 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int match = 0;
 	int count = 0, count2 = 0;
 
+	if (*s == '\0' || *accept == '\0')
+		return ('\0');
+
 	while ((int)s[count] != ',')
 	{
 		count2 = 0;
