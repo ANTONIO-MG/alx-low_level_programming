@@ -11,26 +11,16 @@
 char *_strchr(char *s, char c)
 {
 	int count = 0;
+	char *string;
 
-	while (s[count] != '\0')
+	while (s[count++])
 	{
 		if (s[count] == c)
 		{
-			break;
+			string = &s[count];
+			return (string);
 		}
-		else
-			count++;
 	}
 
-	if (s[count] == c)
-	{
-		while (s[count] != '\0')
-		{
-			_putchar(s[count]);
-			count++;
-		}
-	}
-	else
-		return ('\0');
-	return (0);
+	return ('\0');
 }
