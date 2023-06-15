@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * array_range - unction that creates an array of integers.
  * @min: starting number.
@@ -10,7 +11,7 @@
 int *array_range(int min, int max)
 {
 	int *ptr;
-	int count = min;
+	int count = 0;
 	int total = max - min;
 
 	if (min > max)
@@ -23,9 +24,11 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
-	while (count++ <= max)
+	while (count <= max)
 	{
-		ptr[count] = count;
+		ptr[count] = min;
+		min++;
+		count++
 	}
 
 	return (ptr);
