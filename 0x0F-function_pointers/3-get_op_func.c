@@ -6,7 +6,7 @@
   * get_op_func - function that matches the correct case
   * @s: the operator passed as an argument
   *
-  * Return: pointer to teh function coresponding the operation
+  * Return: pointer to the function coresponding the operation
   */
 int (*get_op_func(char *s))(int, int)
 {
@@ -18,6 +18,7 @@ int (*get_op_func(char *s))(int, int)
 	{ "%", op_mod },
 	{ NULL, NULL }
 	};
+
 	int i = 0;
 
 	while (i < 5)
