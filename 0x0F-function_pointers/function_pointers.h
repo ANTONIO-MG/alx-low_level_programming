@@ -1,11 +1,10 @@
 #ifndef _MAIN_
 #define _MAIN_
 
-// A list of all the necessary libraries i need for the project.
+/** A list of all the necessary libraries i need for the project.*/
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
 
 void print_name(char *name, void (*f)(char *));
 void array_iterator(int *array, size_t size, void (*action)(int));
