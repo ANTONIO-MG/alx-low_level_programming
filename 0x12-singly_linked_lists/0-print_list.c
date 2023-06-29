@@ -11,12 +11,6 @@ size_t print_list(const list_t *h)
 {
 	int nodes = 0;
 
-	if (h == NULL)
-	{
-		printf("ERROR, list is empty\n");
-	}
-
-
 	while (h != NULL)
 	{
 		nodes++;
