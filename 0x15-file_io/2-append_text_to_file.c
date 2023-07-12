@@ -24,12 +24,15 @@ int append_text_to_file(const char *filename, char *text_content)
 	while (text_content[c])
 		c++;
 
+	if (c == '\0')
+		return (-1);
+
 	if (text_content)
 	{
-		if (write(x, text_content, c) == -1)
-			return (-1);
+		(write(x, text_content, c);
 	}
 
 	close(x);
+
 	return (1);
 }

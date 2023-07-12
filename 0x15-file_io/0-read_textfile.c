@@ -20,10 +20,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	x = open(filename, O_RDONLY, 0600);
+
 	if (x == -1)
 		return (0);
 
-	readed = read(x, ptr, letters);
+	y = read(x, ptr, letters);
+
 	write(STDOUT_FILENO, ptr, y);
 
 	free(ptr);
