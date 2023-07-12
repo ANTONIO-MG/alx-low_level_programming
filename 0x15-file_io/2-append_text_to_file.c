@@ -15,8 +15,6 @@ int append_text_to_file(const char *filename, char *text_content)
 	x = open(filename, O_WRONLY | O_APPEND);
 	if (x == -1)
 		return (-1);
-	while (text_content[c])
-		c++;
 	if (text_content)
 	{
 		if (write(fd, text_content, _strlen(text_content)) == -1)
