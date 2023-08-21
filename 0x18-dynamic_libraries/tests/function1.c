@@ -1,62 +1,56 @@
-#include <unistd.h>
 #include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
+ * _isdigit - writes the character c to stdout
  * @c: The character to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _putchar(char c)
+int _isdigit(int c)
 {
-	return (write(1, &c, 1));
 }
 
 /**
- * _islower - writes the character c to stdout
- * @c: The integer to examin
+ * _strlen - writes the character c to stdout
+ * @s: The character to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _islower(int c)
+int _strlen(char *s)
 {
-
 }
 
 /**
- * _isalpha - writes the character c to stdout
- * @c: The character to print
+ * _puts - writes the character c to stdout
+ * @s: The character to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _isalpha(int c)
+void _puts(char *s)
 {
-
 }
 
 /**
- * _abs - writes the character c to stdout
- * @n: The character to print
+ * _strcpy - writes the character c to stdout
+ * @dest: The character to print
+ * @src: the source string
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+char *_strcpy(char *dest, char *src)
+{
+}
+
+/**
+ * _atoi - writes the character c to stdout
+ * @s: The character to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _abs(int n)
+int _atoi(char *s)
 {
-
-}
-
-/**
- * _isupper - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _isupper(int c)
-{
-
 }
